@@ -14,7 +14,10 @@ reverse(""); // ""
 
 
 function reverse(str) {
-  // Your code here 
+  if(str.length <= 1){
+    return str;
+  }
+  return reverse(str.substring(1)) + str[0]
 }
 
 
