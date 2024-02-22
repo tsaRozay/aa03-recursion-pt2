@@ -30,7 +30,21 @@ function exponent(num, power) {
     }
     return num * exponent(num, power -1)
 }
+/*
+    Pristine solution:
+    if (power === 0) {
+        return 1;
+    }
 
+    if (power > 0) {
+        return num * exponent(num, power - 1)
+    }
+
+    if (power < 0) {
+        return 1/num * exponent(num, power + 1)
+    }
+}
+*/
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
     module.exports = exponent;
