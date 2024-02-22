@@ -13,7 +13,12 @@ addToTwelve([1]); // false
 ***********************************************************************/
 
 
-
+function addToTwelve(arr) {
+  if(arr.length === 1){
+    return false;
+  }
+  return addToTwelve(arr.slice(1))|| (arr[0] + arr[1] === 12)
+}
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
